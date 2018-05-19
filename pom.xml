@@ -8,9 +8,14 @@
   <name>springmvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-<properties>
+	<properties>
 		<spring.version>4.2.2.RELEASE</spring.version>
+		<maven.compiler.source>9</maven.compiler.source>
+		<maven.compiler.target>9</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>9</java.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>

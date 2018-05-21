@@ -3,7 +3,12 @@
  
  
 	<display-name>Archetype Created Web Application</display-name>
- 
+	<!--  
+		Dispatcher servlet is already registered in com.curtis.springmvc.configuration;
+		Comment following setting to prevent start two dispatcher.
+		To find the way out to set in web.xml as well
+	-->
+	<!-- 
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>
@@ -27,4 +32,6 @@
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
 	</listener>
+	-->
+
 </web-app>

@@ -11,9 +11,8 @@ public class HomeController {
 	String message = "Let's it go !";
 	 
 	@RequestMapping("/home")
-	public ModelAndView showMessage(
-			@RequestParam(value = "name", required = false, defaultValue = "Sir") String name) {
-		System.out.println("in HomeController");
+	public ModelAndView showMessage(@RequestParam(value = "name", required = false, defaultValue = "Sir") String name) {
+		System.out.println("In HomeController");
  
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("message", message);
